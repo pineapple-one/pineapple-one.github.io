@@ -34,7 +34,7 @@ p {
 	
 }
 
-h1 {
+.content-container h1 {
 	text-transform: uppercase;
 	background: linear-gradient(to right, #30AAD0 0%, #330867 100%);
 	-webkit-background-clip: text;
