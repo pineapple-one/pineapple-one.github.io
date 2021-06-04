@@ -1,0 +1,24 @@
+.main-container {
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;..");
+}
+
+.social-media-btn {
+	position: relative;
+	left: 15vw;
+	top: 5%;
+	margin: 30px;
+}
+
+.content-container h1 {
+	font-weight: bold;
+	margin-bottom: 30px;
+	margin-top: 50px;
+}
+
+p {
+	padding: 20px;
+}

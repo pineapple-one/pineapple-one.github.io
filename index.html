@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" class="rel">
+    <title>Pineapple ONE</title>
 </head>
 <body>
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -22,51 +23,72 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 
 
-    <div class="container-fluid h-100" style="background-image: url('background.png');">
+    <div class="container-fluid main-container" style="height: 100%; min-height: 100vh;">
         <div class="row">       
-            <nav class="col-10 navbar navbar-expand-lg navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <nav class="navbar navbar-expand-lg navbar-dark main-container">
+            <div class="container-fluid">
+                <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item mx-2">
-                            <a class="nav-link text-light" style="font-weight: bold;" href="#">Home</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a class="nav-link text-light" style="font-weight: bold;" href="#">About me</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a class="nav-link text-light" style="font-weight: bold;" href="#">About devs</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a class="nav-link text-light" style="font-weight: bold;" href="#">About project</a>
-                        </li>
-                    </ul>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link mx-2" href="#about-me">About me</a>
+                    <a class="nav-link mx-2" href="#about-project">About project</a>
+                    <a class="nav-link mx-2" href="#video">Video</a>
                 </div>
-            </nav>
-            <div class="col-2 p-2 ">
-                <a href="#"><i class="fa fa-twitter fa-2x mx-2" style="color: grey" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-github fa-2x mx-2"  style="color: grey" aria-hidden="true"></i></a>
+                </div>
             </div>
+            </nav>
          </div>
         <div class="row">
-            <div class="col-lg-6">
-                <h1 class="p-10" style="padding-left: 8rem; padding-top: 10rem;font-family: 'Squada One', cursive; font-size: 120px; color: white; ">Pineapple ONE</h1>
-                <h3 style="padding-left: 8rem">Open source 32 bit RISC-V CPU that you can make at home
-                    Under construction
+            <div class="col-xl-7">
+                <h1 class="p-10" style="padding-left: 8vw; padding-top: 10vw;font-family: 'Squada One', cursive; color: white; font-size: 500%; ">Pineapple ONE</h1>
+                <h3 class="text-white" style="padding-left: 8vw">Open source 32 bit RISC-V CPU that you can make at home
+                    <br>Under construction
                 </h3>
+                <a href="#" class="btn btn-primary btn-lg social-media-btn rounded-pill" tabindex="-1" role="button" aria-disabled="true">Check our Github</a>
+                <a href="#" class="btn btn-primary btn-lg social-media-btn rounded-pill" tabindex="-1" role="button" aria-disabled="true">Check our Twitter</a>
             </div>
-            <div class="col-lg-6" style="padding-left: 8rem">
-                <img src="PO_processor-mask.png" class="w-100">
+            <div class="col-xxl-5">
+                <img src="cpu-inside.png" class="img-fluid" style="margin-top: 10vh;">
             </div>
         </div>
     </div>
-    <div class="container-lg">
-        <hr>
+    <div class="container-lg text-center content-container">
         <div class="row">
-            
+            <div class="col-lg">
+                <!-- Content -->
+                <h1 id="about-me">About me</h1>
+                <p>
+                    A central processing unit (CPU), also called a central processor, main processor or just processor, is the electronic circuitry that executes instructions comprising a computer program. The CPU performs basic arithmetic, logic, controlling, and input/output (I/O) operations specified by the instructions in the program. This contrasts with external components such as main memory and I/O circuitry,[1] and specialized processors such as graphics processing units (GPUs).
+
+The form, design, and implementation of CPUs have changed over time, but their fundamental operation remains almost unchanged. Principal components of a CPU include the arithmetic logic unit (ALU) that performs arithmetic and logic operations, processor registers that supply operands to the ALU and store the results of ALU operations, and a control unit that orchestrates the fetching (from memory) and execution of instructions by directing the coordinated operations of the ALU, registers and other components.
+
+Most modern CPUs are implemented on integrated circuit (IC) microprocessors, with one or more CPUs on a single metal-oxide-semiconductor (MOS) IC chip. Microprocessors chips with multiple CPUs are multi-core processors. The individual physical CPUs, processor cores, can also be multithreaded to create additional virtual or logical CPUs - test from Wikipedia
+                </p>
+            <hr>
+                <!-- Content end -->
+                <h1 id="about-project">About project</h1>
+                <p>
+                    A central processing unit (CPU), also called a central processor, main processor or just processor, is the electronic circuitry that executes instructions comprising a computer program. The CPU performs basic arithmetic, logic, controlling, and input/output (I/O) operations specified by the instructions in the program. This contrasts with external components such as main memory and I/O circuitry,[1] and specialized processors such as graphics processing units (GPUs).
+
+The form, design, and implementation of CPUs have changed over time, but their fundamental operation remains almost unchanged. Principal components of a CPU include the arithmetic logic unit (ALU) that performs arithmetic and logic operations, processor registers that supply operands to the ALU and store the results of ALU operations, and a control unit that orchestrates the fetching (from memory) and execution of instructions by directing the coordinated operations of the ALU, registers and other components.
+
+Most modern CPUs are implemented on integrated circuit (IC) microprocessors, with one or more CPUs on a single metal-oxide-semiconductor (MOS) IC chip. Microprocessors chips with multiple CPUs are multi-core processors. The individual physical CPUs, processor cores, can also be multithreaded to create additional virtual or logical CPUs - test from Wikipedia
+                </p>
+             <hr>
+                <h1 id="video">Video</h1>
+
+             <iframe width="100%" height="715" src="https://www.youtube.com/embed/NUAVKNVrPh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <hr>
+            </div>
         </div>
+    </div>
+    <div class="container-fluid bd-light text-center">
+        <div class="mt-5 mb-2">
+            © 2021 Pineapple ONE - Dev Team
+        </div>
+        
     </div>
 
 </body>
