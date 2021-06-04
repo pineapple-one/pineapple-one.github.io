@@ -6,11 +6,17 @@
   background-image: url("data:image/svg+xml;..");
 }
 
+.social-media-btn-div {
+	margin-top: 50px;
+	text-align: center;
+}
+
 .social-media-btn {
-	position: relative;
+	/* position: relative;
 	left: 15vw;
 	top: 5%;
-	margin: 30px;
+	margin-left: 30px; */
+	margin: 20px;
 }
 
 .content-container h1 {
@@ -21,4 +27,9 @@
 
 p {
 	padding: 20px;
+}
+.pineapple-img {
+    width: 90% !important;
+	margin: 0 auto;
+	
 }
