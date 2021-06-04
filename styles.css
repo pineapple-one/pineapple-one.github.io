@@ -33,3 +33,10 @@ p {
 	margin: 0 auto;
 	
 }
+
+h1 {
+	text-transform: uppercase;
+	background: linear-gradient(to right, #30AAD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
