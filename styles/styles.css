@@ -40,3 +40,7 @@ p {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+.container-lg {
+    max-width: 1000px;
+}

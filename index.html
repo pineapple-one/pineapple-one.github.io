@@ -13,7 +13,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/styles/styles.css" class="rel">
     <title>Pineapple ONE</title>
 </head>
@@ -31,9 +31,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link mx-2" href="#about-me">About me</a>
-                    <a class="nav-link mx-2" href="#about-project">About project</a>
-                    <a class="nav-link mx-2" href="#video">Video</a>
+                    <a class="nav-link mx-2" href="#about">About</a>
+                    <a class="nav-link mx-2" href="#what_has_been_done">What has been done</a>
+                    <a class="nav-link mx-2" href="#how_contribute">How you can contribute</a>
+                    <a class="nav-link mx-2" href="#video_demo">Video demo</a>
+                    <a class="nav-link mx-2" href="#about_us">About us</a>
                 </div>
                 </div>
             </div>
@@ -43,11 +45,11 @@
             <div class="col-xl-7">
                 <h1 class="p-10" style="padding-left: 8vw; padding-top: 10vw;font-family: 'Squada One', cursive; color: white; font-size: 500%; ">Pineapple ONE</h1>
                 <h3 class="text-white" style="padding-left: 8vw">Open source 32 bit RISC-V CPU that you can make at home
-                    <br>Under construction
                 </h3>
                 <div class="social-media-btn-div">
-                    <a href="https://github.com/pineapple-one" target="_blank" class="btn btn-primary btn-lg social-media-btn rounded-pill" tabindex="-1" role="button" aria-disabled="true">Check our GitHub</a>
-                    <a href="https://twitter.com/ten_filip" target="_blank" class="btn btn-primary btn-lg social-media-btn rounded-pill" tabindex="-1" role="button" aria-disabled="true">Check our Twitter</a>
+                    <a href="https://github.com/pineapple-one" target="_blank" class="btn btn-primary btn-lg social-media-btn rounded-pill" tabindex="-1" role="button" aria-disabled="true"><i class="fa fa-github fa-lg text-dark mx-2" aria-hidden="true"></i>Check our GitHub</a>
+                    <a href="https://twitter.com/ten_filip" target="_blank" class="btn btn-primary btn-lg social-media-btn rounded-pill" tabindex="-1" role="button" aria-disabled="true"><i class="fa fa-twitter fa-lg text-dark mx-2" aria-hidden="true"></i>Check our Twitter</a>
+                    <a href="https://discord.gg/yWn4RYBQaD" target="_blank" class="btn btn-primary btn-lg social-media-btn rounded-pill" tabindex="-1" role="button" aria-disabled="true"><img src="https://wiki.miranda-ng.org/images/4/4d/Discord-Logo-Black.png" style="width: 30px; margin-right: 8px;">Join our Discord</a>
                 </div>
             </div>
             <div class="col-xl-5 text-center">
@@ -59,38 +61,109 @@
         <div class="row">
             <div class="col-lg">
                 <!-- Content -->
-                <h1 id="about-me">About me</h1>
-                <p>
-                    A central processing unit (CPU), also called a central processor, main processor or just processor, is the electronic circuitry that executes instructions comprising a computer program. The CPU performs basic arithmetic, logic, controlling, and input/output (I/O) operations specified by the instructions in the program. This contrasts with external components such as main memory and I/O circuitry,[1] and specialized processors such as graphics processing units (GPUs).
+                <h1 id="about">About</h1>
+                <p style="text-align: justify;">
+                    Welcome! Pineapple ONE is a functioning (makro)processor, that is based on a open-source architecture RISC-V. 
+                    This architecture is becoming very popular these days and it is well, open-source, so we chose to build a cpu 
+                    only out of discrete logic around it. You heard it right, there is no FPGA nor any microcontroller, there are 
+                    just logic gates and memories.
+	                Our goal is to prove that designing a “modern” CPU isn’t that hard, so we have released our schematics and made
+                    it open source as well. You can check out our [GitHub repository] for more information. If there would be enough
+                    interest, maybe we could make a DIY kit, so anybody interested with soldering skills would be able to make their 
+                    own Pineapple ONE*! 
 
-                    The form, design, and implementation of CPUs have changed over time, but their fundamental operation remains almost unchanged. Principal components of a CPU include the arithmetic logic unit (ALU) that performs arithmetic and logic operations, processor registers that supply operands to the ALU and store the results of ALU operations, and a control unit that orchestrates the fetching (from memory) and execution of instructions by directing the coordinated operations of the ALU, registers and other components.
+                    <br>
+                    <br>
+                    <span>* “Pineapple ONE” is a temporary name and could be changed later due to legal reasons.</span>
 
-                    Most modern CPUs are implemented on integrated circuit (IC) microprocessors, with one or more CPUs on a single metal-oxide-semiconductor (MOS) IC chip. Microprocessors chips with multiple CPUs are multi-core processors. The individual physical CPUs, processor cores, can also be multithreaded to create additional virtual or logical CPUs - test from Wikipedia
                 </p>
             <hr>
                 <!-- Content end -->
-                <h1 id="about-project">About project</h1>
-                <p>
-                    A central processing unit (CPU), also called a central processor, main processor or just processor, is the electronic circuitry that executes instructions comprising a computer program. The CPU performs basic arithmetic, logic, controlling, and input/output (I/O) operations specified by the instructions in the program. This contrasts with external components such as main memory and I/O circuitry,[1] and specialized processors such as graphics processing units (GPUs).
-
-                    The form, design, and implementation of CPUs have changed over time, but their fundamental operation remains almost unchanged. Principal components of a CPU include the arithmetic logic unit (ALU) that performs arithmetic and logic operations, processor registers that supply operands to the ALU and store the results of ALU operations, and a control unit that orchestrates the fetching (from memory) and execution of instructions by directing the coordinated operations of the ALU, registers and other components.
-
-                    Most modern CPUs are implemented on integrated circuit (IC) microprocessors, with one or more CPUs on a single metal-oxide-semiconductor (MOS) IC chip. Microprocessors chips with multiple CPUs are multi-core processors. The individual physical CPUs, processor cores, can also be multithreaded to create additional virtual or logical CPUs - test from Wikipedia
+                <h1 id="what_has_been_done">What have we done so far</h1>
+                <p style="text-align: justify;">
+                    [Filip Szkandera] spend two years designing and building a 32 bit cpu utilising the RISC-V architecture. 
+                    His cpu supports a RV32I standard, so it is compatible with available compilers. 
+                    It runs at 500 kHz, has a 512 kB program memory and 512 kB RAM. It also features a simple B&W VGA card with resolution of 200x150 px, 
+                    so we can connect an external monitor and display some simple graphics. He created a simple shell program, 
+                    that let users interact with the CPU via a keyboard connected to one of the input ports. 
+	                He made a prototype first, where all the necessary features were tested and debugged and then optimised it to a modular CPU in a tower-like structure. 
+                    He wanted to turn this into a community project, so anybody who is interested can contribute, or build their own. 
+                    Now it is time to see how far we can get it together as a community.
                 </p>
              <hr>
-                <h1 id="video">Video</h1>
+                <h1 id="how_contribute">How you can contribute</h1>
+                <p style="text-align: justify;">
+                    The current prototype that [Filip] made is not 100% reliable and kind of slow. To (maybe) turn is into a kit of some sort,
+                     these issues would need to be resolved and maybe some additional features added - maybe some audio card, native PS/2 keyboard
+                      support or a better VGA card - possibilities are endless. If you want to contribute, you can help with schematics, designing 
+                      PCBs, creating new modules, softwares, website(s) or literally anything else, it doesn’t need to be CPU related at all. Feel 
+                      free to join our discord server to discuss your ideas, or just hang out there if you feel like :).
+                </p>
+            <hr>
+
+                <h1 id="video_demo">Video</h1>
 
              <iframe width="100%" height="715" src="https://www.youtube.com/embed/NUAVKNVrPh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <hr>
+                <h1 id="about_us">About us</h1>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="w-100" src="img/szkandera.jpg"/>
+                        </div>
+                        <div class="col-md-9" style="text-align: left;">
+                            <h4>Filip Szkandera</h4>
+                            <p style="text-align: justify; padding-left: 0px">
+                                Student of Higher School and Secondary School of Electrotechnical Engineering in Olomouc, Czech Republic. Nineteen years old.
+                                <br>
+                                <span class="text-secondary">(2021)</span>
+                                <br>
+                                <i class="fa fa-twitter" aria-hidden="true" style="margin-right: 20px"></i><a href="https://twitter.com/ten_filip">@ten_filip</a>
+                                <br>
+                                <i class="fa fa-envelope-o" aria-hidden="true" style="margin-right: 20px;"></i><a href="mailto: filip.szkandera@gmail.com">filip.szkandera@gmail.com</a>
+                                <br>
+                                <i class="fa fa-linkedin" aria-hidden="true" style="margin-right: 20px;"></i><a href="https://www.linkedin.com/in/filip-szkandera-074154211">Filip Szkandera</a>
+                                
+                                
+                            </p>
+                        </div>
+
+                        <br>
+                        <h4 style="margin-top: 30px; margin-bottom: 30px;">Other contributors:</h4>
+                        <table class="table" style="text-align: left;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Twitter</th>
+                                    <!-- <th scope="col">LinkedIn</th> -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Martin Prochazka</th>
+                                    <td><a href="mailto:pro.nitram@gmail.com">pro.nitram@gmail.com</a></td>
+                                    <td><a href=""></a>-</td>
+                                    <!-- <td>-</td> -->
+                                </tr>
+                                <tr>
+                                    <th>Tadeas Frycak</th>
+                                    <td><a href="mailto:Frycaktadeas@seznam.cz">Frycaktadeas@seznam.cz</a></td>
+                                    <td><a href="https://twitter.com/TFrycak">@TFrycak</a></td>
+                                    <!-- <td>-</td> -->
+                                </tr>
+                                <!-- <tr>
+                                    <th>3</th>
+                                    <td><a href="mailto:"></a></td>
+                                    <td><a href="">@twitter</a></td>
+                                    <td></td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+
+                        <span style="margin-top: 30px; margin-bottom: 30px;">If you contributed to this project, feel free to add yourself here as well!</span>
+                    </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid bd-light text-center">
-        <div class="mt-5 mb-2">
-            2021 Pineapple ONE - Dev Team
-        </div>
-        
-    </div>
-
 </body>
 </html>
